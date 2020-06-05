@@ -9,7 +9,7 @@ $ shipper.sh -h <BURROW HOST> -s <OAUTH2 CLIENT SECRET> -r <OAUTH2 REFRESH TOKEN
 ```
 
 ```sh
-# Crontab (Everyday every 5pm)
+# Crontab (Everyday at 5pm)
 0 17 * * * shipper.sh -h <BURROW HOST> -s <OAUTH2 CLIENT SECRET> -r <OAUTH2 REFRESH TOKEN> -i <OAUTH2 CLIENT ID> -b <GCP BUCKET> -f <JSON FILENAME>
 ```
 
