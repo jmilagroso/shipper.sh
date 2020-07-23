@@ -38,8 +38,7 @@ if BURROW_GET_TOPICS_CURL=$(curl "${BURROW_HOST}/v3/kafka/aws-msk/topic"); then
                 echo "TOPIC DOES NOT EXISTS ANYMORE. SKIPPING.."
             else
                 # TOPIC FOUND
-                OFFSETS="${OFFSETS::-11}"
-                OFFSETS="${OFFSETS:1:-1}"
+                OFFSETS="${OFFSETS:1:-11}"
 
                 JSON="${JSON} \"${TOPIC}\":\"${OFFSETS}\"," 
             fi
