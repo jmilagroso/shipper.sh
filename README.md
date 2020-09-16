@@ -1,5 +1,5 @@
 # shipper.sh
-Ships Kafka topics and offsets to GCP Storage using Linkedin Burrow
+Ships Kafka topics and latest offsets to GCP Storage using Linkedin Burrow
 
 
 ### Usage
